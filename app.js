@@ -25,6 +25,9 @@ function getComputerChoice() {
   }
 }
 
+// playRound() compares the player's choice to the computer's choice and
+// decides who wins. Then the scores are updated and everything is printed
+// to the browser console.
 function playRound(humanChoice, computerChoice) {
   if (humanChoice === "rock") {
     if (computerChoice === "scissors") {
