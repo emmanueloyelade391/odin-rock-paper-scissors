@@ -28,3 +28,6 @@ function getComputerChoice() {
 getHumanChoice(); 
 
 getComputerChoice();
+
+//Tomorrow, make a function to simulate a round between player and
+//computer by comparing their choices.
