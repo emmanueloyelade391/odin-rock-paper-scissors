@@ -101,6 +101,8 @@ function playRound(humanChoice, computerChoice) {
   }
 }
 
+//playGame() calls the playRound() function 5 times, thus 
+//simulating 5 rounds of rock, paper, scissors.
 function playGame() {
   playRound(getHumanChoice(), getComputerChoice());
   playRound(getHumanChoice(), getComputerChoice());
