@@ -1,6 +1,4 @@
 //Create player and computer score and set them to 0
-//let playerScore = 0;
-//let computerScore = 0;
 
 //getHumanChoice() receives the player's choice as the user input
 function getHumanChoice() {
@@ -101,23 +99,6 @@ function playRound(humanChoice, computerChoice) {
     }
   }
 }
-
-//playGame() calls the playRound() function 5 times, thus 
-//simulating 5 rounds of rock, paper, scissors.
-/*function playGame() {
-  let playerScore = 0;
-  let computerScore = 0;
-  console.log(`Original player score: ${playerScore}`);
-  console.log(`Original computer score: ${computerScore}`);
-  playRound(getHumanChoice(), getComputerChoice());
-  playRound(getHumanChoice(), getComputerChoice());
-  playRound(getHumanChoice(), getComputerChoice());
-  playRound(getHumanChoice(), getComputerChoice());
-  playRound(getHumanChoice(), getComputerChoice());
-}*/
-
-//console.log(`Original player score: ${playerScore}`);
-//console.log(`Original computer score: ${computerScore}`);
 
 function playGame() {
   function playRound(humanChoice, computerChoice) {
