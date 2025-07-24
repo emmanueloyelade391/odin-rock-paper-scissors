@@ -200,8 +200,6 @@ const updatedPlayerScore = document.querySelector("#updated-player-score");
 updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
 const updatedComputerScore = document.querySelector("#updated-computer-score");
 updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
-console.log(`Original player score: ${playerScore}`);
-console.log(`Original computer score: ${computerScore}`);
 
 const rock = document.querySelector("#rock");
 rock.addEventListener("click", (event) => {
@@ -215,21 +213,15 @@ rock.addEventListener("click", (event) => {
         playerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
         updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
-        console.log(`Your score: ${playerScore}`);
-        console.log(`Computer score: ${computerScore}`);
       } else if (computerChoice === "paper") {
         results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
         console.log("You lose! Paper beats rock.");
         computerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
         updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
-        console.log(`Your score: ${playerScore}`);
-        console.log(`Computer score: ${computerScore}`);
       } else {
         results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
         console.log("It's a tie");
-        console.log(`Your score: ${playerScore}`);
-        console.log(`Computer score: ${computerScore}`);
       }
  
 });
@@ -246,21 +238,15 @@ paper.addEventListener("click", (event) => {
         playerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
         updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
-        console.log(`Your score: ${playerScore}`);
-        console.log(`Computer score: ${computerScore}`);
         } else if (computerChoice === "scissors") {
         results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
         console.log("You lose! Scissors beats paper.");
         computerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
         updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
-        console.log(`Your score: ${playerScore}`);
-        console.log(`Computer score: ${computerScore}`);
         } else {
         results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
         console.log("It's a tie");
-        console.log(`Your score: ${playerScore}`);
-        console.log(`Computer score: ${computerScore}`);
         }
 });
 
