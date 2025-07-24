@@ -194,7 +194,6 @@ function playRound(humanChoice, computerChoice) {
 
 //playGame();
 
-let counter = 0;
 let playerScore = 0;
 let computerScore = 0;
 const updatedPlayerScore = document.querySelector("#updated-player-score");
