@@ -196,6 +196,10 @@ function playGame() {
 
 let playerScore = 0;
 let computerScore = 0;
+const updatedPlayerScore = document.querySelector("#updated-player-score");
+updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
+const updatedComputerScore = document.querySelector("#updated-computer-score");
+updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
 console.log(`Original player score: ${playerScore}`);
 console.log(`Original computer score: ${computerScore}`);
 
@@ -257,8 +261,6 @@ scissors.addEventListener("click", (event) => {
   const target = event.target.id
   const computerChoice = getComputerChoice();
   playRound(getHumanChoice(target), getComputerChoice());
-  const updatedPlayerScore = document.querySelector("#updated-player-score");
-  const updatedComputerScore = document.querySelector("#updated-computer-score");
   const results = document.querySelector("#results");
   if (computerChoice === "paper") {
           results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
