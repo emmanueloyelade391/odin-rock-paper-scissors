@@ -316,21 +316,15 @@ scissors.addEventListener("click", (event) => {
           playerScore++;
           updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
           updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
-          console.log(`Your score: ${playerScore}`);
-          console.log(`Computer score: ${computerScore}`);
         } else if (computerChoice === "rock") {
           results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
           console.log("You lose! Rock beats scissors.");
           computerScore++;
           updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
           updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
-          console.log(`Your score: ${playerScore}`);
-          console.log(`Computer score: ${computerScore}`);
         } else {
           results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
           console.log("It's a tie");
-          console.log(`Your score: ${playerScore}`);
-          console.log(`Computer score: ${computerScore}`);
         }
   counter++;
 });
