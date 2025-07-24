@@ -1,5 +1,3 @@
-//Create player and computer score and set them to 0
-
 //getHumanChoice() receives the player's choice as the user input
 function getHumanChoice() {
   const choice = prompt("Choice rock, paper, or scissors.:");
@@ -23,11 +21,10 @@ function getComputerChoice() {
   }
 }
 
-// playRound() compares the player's choice to the computer's choice and
-// decides who wins. Then the scores are updated and everything is printed
-// to the browser console.
-
 function playGame() {
+  // playRound() compares the player's choice to the computer's choice and
+  // decides who wins. Then the scores are updated and everything is printed
+  // to the browser console.
   function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase();
     if (humanChoice === "rock") {
@@ -102,6 +99,7 @@ function playGame() {
       }
     }
 
+  //Create player and computer score and set them to 0
   let playerScore = 0;
   let computerScore = 0;
   console.log(`Original player score: ${playerScore}`);
