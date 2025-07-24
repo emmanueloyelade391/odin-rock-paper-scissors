@@ -194,6 +194,11 @@ function playGame() {
 
 //playGame();
 
+let playerScore = 0;
+let computerScore = 0;
+console.log(`Original player score: ${playerScore}`);
+console.log(`Original computer score: ${computerScore}`);
+
 const rock = document.querySelector("#rock");
 rock.addEventListener("click", (event) => {
   const target = event.target.id
