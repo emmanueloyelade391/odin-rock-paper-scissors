@@ -97,7 +97,7 @@ function playRound(humanChoice, computerChoice) {
 
 //playGame() runs playRound() 5 times and announces the definitive 
 //winner of the game after playRound() is ran 5 times.
-function playGame() {
+/*function playGame() {
   // playRound() compares the player's choice to the computer's choice and
   // decides who wins. Then the scores are updated and everything is printed
   // to the browser console.
@@ -190,10 +190,11 @@ function playGame() {
   } else {
     console.log("You lose! The computer wins!");
   }
-} 
+} */
 
 //playGame();
 
+let counter = 0;
 let playerScore = 0;
 let computerScore = 0;
 const updatedPlayerScore = document.querySelector("#updated-player-score");
