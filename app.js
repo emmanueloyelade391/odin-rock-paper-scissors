@@ -199,3 +199,15 @@ rock.addEventListener("click", (event) => {
   const target = event.target.id
   playRound(getHumanChoice(target), getComputerChoice());
 });
+
+const paper = document.querySelector("#paper");
+paper.addEventListener("click", (event) => {
+  const target = event.target.id
+  playRound(getHumanChoice(target), getComputerChoice());
+});
+
+const scissors = document.querySelector("#scissors");
+scissors.addEventListener("click", (event) => {
+  const target = event.target.id
+  playRound(getHumanChoice(target), getComputerChoice());
+});
