@@ -108,10 +108,6 @@ function playGame() {
   console.log(`Original computer score: ${computerScore}`);
 
   playRound(getHumanChoice(), getComputerChoice());
-  playRound(getHumanChoice(), getComputerChoice());
-  playRound(getHumanChoice(), getComputerChoice());
-  playRound(getHumanChoice(), getComputerChoice());
-  playRound(getHumanChoice(), getComputerChoice());
 
   if (playerScore > computerScore) {
     console.log("You win!");
