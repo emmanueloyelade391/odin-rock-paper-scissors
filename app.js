@@ -213,12 +213,16 @@ rock.addEventListener("click", (event) => {
         results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
         console.log("You win! Rock beats scissors.");
         playerScore++;
+        updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
+        updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
         console.log(`Your score: ${playerScore}`);
         console.log(`Computer score: ${computerScore}`);
       } else if (computerChoice === "paper") {
         results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
         console.log("You lose! Paper beats rock.");
         computerScore++;
+        updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
+        updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
         console.log(`Your score: ${playerScore}`);
         console.log(`Computer score: ${computerScore}`);
       } else {
@@ -240,12 +244,16 @@ paper.addEventListener("click", (event) => {
         results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
         console.log("You win! Paper beats rock.");
         playerScore++;
+        updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
+        updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
         console.log(`Your score: ${playerScore}`);
         console.log(`Computer score: ${computerScore}`);
         } else if (computerChoice === "scissors") {
         results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
         console.log("You lose! Scissors beats paper.");
         computerScore++;
+        updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
+        updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
         console.log(`Your score: ${playerScore}`);
         console.log(`Computer score: ${computerScore}`);
         } else {
@@ -266,12 +274,16 @@ scissors.addEventListener("click", (event) => {
           results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
           console.log("You win! Scissors beats paper.");
           playerScore++;
+          updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
+          updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
           console.log(`Your score: ${playerScore}`);
           console.log(`Computer score: ${computerScore}`);
         } else if (computerChoice === "rock") {
           results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
           console.log("You lose! Rock beats scissors.");
           computerScore++;
+          updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
+          updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
           console.log(`Your score: ${playerScore}`);
           console.log(`Computer score: ${computerScore}`);
         } else {
