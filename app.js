@@ -208,7 +208,7 @@ rock.addEventListener("click", (event) => {
   playRound(getHumanChoice(target), computerChoice);
   const results = document.querySelector("#results");
   if (computerChoice === "scissors") {
-        results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+        results.textContent = `You chose: ${target} > Computer chose: ${computerChoice}`;
         console.log("You win! Rock beats scissors.");
         playerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
@@ -227,7 +227,7 @@ rock.addEventListener("click", (event) => {
             });
           }
       } else if (computerChoice === "paper") {
-        results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+        results.textContent = `You chose: ${target} < Computer chose: ${computerChoice}`;
         console.log("You lose! Paper beats rock.");
         computerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
@@ -246,7 +246,7 @@ rock.addEventListener("click", (event) => {
             });
           }
       } else {
-        results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+        results.textContent = `You chose: ${target} = Computer chose: ${computerChoice}`;
         console.log("It's a tie");
       }
 });
@@ -258,7 +258,7 @@ paper.addEventListener("click", (event) => {
   playRound(getHumanChoice(target), getComputerChoice());
   const results = document.querySelector("#results");
   if (computerChoice === "rock") {
-        results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+        results.textContent = `You chose: ${target} > Computer chose: ${computerChoice}`;
         console.log("You win! Paper beats rock.");
         playerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
@@ -277,7 +277,7 @@ paper.addEventListener("click", (event) => {
             });
           }
         } else if (computerChoice === "scissors") {
-        results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+        results.textContent = `You chose: ${target} < Computer chose: ${computerChoice}`;
         console.log("You lose! Scissors beats paper.");
         computerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
@@ -296,7 +296,7 @@ paper.addEventListener("click", (event) => {
             });
           }
         } else {
-        results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+        results.textContent = `You chose: ${target} = Computer chose: ${computerChoice}`;
         console.log("It's a tie");
         }
 });
@@ -308,7 +308,7 @@ scissors.addEventListener("click", (event) => {
   playRound(getHumanChoice(target), getComputerChoice());
   const results = document.querySelector("#results");
   if (computerChoice === "paper") {
-          results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+          results.textContent = `You chose: ${target} > Computer chose: ${computerChoice}`;
           console.log("You win! Scissors beats paper.");
           playerScore++;
           updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
@@ -327,7 +327,7 @@ scissors.addEventListener("click", (event) => {
             });
           }
         } else if (computerChoice === "rock") {
-          results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+          results.textContent = `You chose: ${target} < Computer chose: ${computerChoice}`;
           console.log("You lose! Rock beats scissors.");
           computerScore++;
           updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
@@ -346,7 +346,7 @@ scissors.addEventListener("click", (event) => {
             });
           }
         } else {
-          results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+          results.textContent = `You chose: ${target} = Computer chose: ${computerChoice}`;
           console.log("It's a tie");
         }
 });
