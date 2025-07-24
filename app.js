@@ -250,7 +250,6 @@ rock.addEventListener("click", (event) => {
         results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
         console.log("It's a tie");
       }
-  counter++;
 });
 
 const paper = document.querySelector("#paper");
@@ -301,7 +300,6 @@ paper.addEventListener("click", (event) => {
         results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
         console.log("It's a tie");
         }
-  counter++;
 });
 
 const scissors = document.querySelector("#scissors");
@@ -352,5 +350,4 @@ scissors.addEventListener("click", (event) => {
           results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
           console.log("It's a tie");
         }
-  counter++;
 });
