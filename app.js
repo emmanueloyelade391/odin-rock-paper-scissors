@@ -257,6 +257,8 @@ scissors.addEventListener("click", (event) => {
   const target = event.target.id
   const computerChoice = getComputerChoice();
   playRound(getHumanChoice(target), getComputerChoice());
+  const updatedPlayerScore = document.querySelector("#updated-player-score");
+  const updatedComputerScore = document.querySelector("#updated-computer-score");
   const results = document.querySelector("#results");
   if (computerChoice === "paper") {
           results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
