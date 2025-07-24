@@ -202,17 +202,78 @@ console.log(`Original computer score: ${computerScore}`);
 const rock = document.querySelector("#rock");
 rock.addEventListener("click", (event) => {
   const target = event.target.id
-  playRound(getHumanChoice(target), getComputerChoice());
+  const computerChoice = getComputerChoice();
+  playRound(getHumanChoice(target), computerChoice);
+  const results = document.querySelector("#results");
+  if (computerChoice === "scissors") {
+        results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+        console.log("You win! Rock beats scissors.");
+        playerScore++;
+        console.log(`Your score: ${playerScore}`);
+        console.log(`Computer score: ${computerScore}`);
+      } else if (computerChoice === "paper") {
+        results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+        console.log("You lose! Paper beats rock.");
+        computerScore++;
+        console.log(`Your score: ${playerScore}`);
+        console.log(`Computer score: ${computerScore}`);
+      } else {
+        results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+        console.log("It's a tie");
+        console.log(`Your score: ${playerScore}`);
+        console.log(`Computer score: ${computerScore}`);
+      }
+ 
 });
 
 const paper = document.querySelector("#paper");
 paper.addEventListener("click", (event) => {
   const target = event.target.id
+  const computerChoice = getComputerChoice();
   playRound(getHumanChoice(target), getComputerChoice());
+  const results = document.querySelector("#results");
+  if (computerChoice === "rock") {
+        results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+        console.log("You win! Paper beats rock.");
+        playerScore++;
+        console.log(`Your score: ${playerScore}`);
+        console.log(`Computer score: ${computerScore}`);
+        } else if (computerChoice === "scissors") {
+        results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+        console.log("You lose! Scissors beats paper.");
+        computerScore++;
+        console.log(`Your score: ${playerScore}`);
+        console.log(`Computer score: ${computerScore}`);
+        } else {
+        results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+        console.log("It's a tie");
+        console.log(`Your score: ${playerScore}`);
+        console.log(`Computer score: ${computerScore}`);
+        }
 });
 
 const scissors = document.querySelector("#scissors");
 scissors.addEventListener("click", (event) => {
   const target = event.target.id
+  const computerChoice = getComputerChoice();
   playRound(getHumanChoice(target), getComputerChoice());
+  const results = document.querySelector("#results");
+  if (computerChoice === "paper") {
+          results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+          console.log("You win! Scissors beats paper.");
+          playerScore++;
+          console.log(`Your score: ${playerScore}`);
+          console.log(`Computer score: ${computerScore}`);
+        } else if (computerChoice === "rock") {
+          results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+          console.log("You lose! Rock beats scissors.");
+          computerScore++;
+          console.log(`Your score: ${playerScore}`);
+          console.log(`Computer score: ${computerScore}`);
+        } else {
+          results.textContent = `You chose: ${target}. Computer chose: ${computerChoice}`;
+          console.log("It's a tie");
+          console.log(`Your score: ${playerScore}`);
+          console.log(`Computer score: ${computerScore}`);
+        }
 });
