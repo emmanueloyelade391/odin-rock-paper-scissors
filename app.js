@@ -207,6 +207,7 @@ rock.addEventListener("click", (event) => {
   const computerChoice = getComputerChoice();
   playRound(getHumanChoice(target), computerChoice);
   const results = document.querySelector("#results");
+  const outcome = document.querySelector("#outcome");
   if (computerChoice === "scissors") {
         results.textContent = `You chose: ${target} > Computer chose: ${computerChoice}`;
         console.log("You win! Rock beats scissors.");
