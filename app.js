@@ -112,7 +112,6 @@ rock.addEventListener("click", (event) => {
         results.textContent = `You chose: ${target} > Computer chose: ${computerChoice}`;
         outcome.textContent = "You win! Rock beats scissors.";
         console.log("You win! Rock beats scissors.");
-        playerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
         updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
         if (playerScore > 5) {
@@ -134,7 +133,6 @@ rock.addEventListener("click", (event) => {
         results.textContent = `You chose: ${target} < Computer chose: ${computerChoice}`;
         outcome.textContent = "You lose! Paper beats rock.";
         console.log("You lose! Paper beats rock.");
-        computerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
         updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
         if (playerScore > 5) {
@@ -170,7 +168,6 @@ paper.addEventListener("click", (event) => {
         results.textContent = `You chose: ${target} > Computer chose: ${computerChoice}`;
         outcome.textContent = "You win! Paper beats rock.";
         console.log("You win! Paper beats rock.");
-        playerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
         updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
         if (playerScore > 5) {
@@ -192,7 +189,6 @@ paper.addEventListener("click", (event) => {
         results.textContent = `You chose: ${target} < Computer chose: ${computerChoice}`;
         outcome.textContent = "You lose! Scissors beats paper.";
         console.log("You lose! Scissors beats paper.");
-        computerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
         updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
         if (playerScore > 5) {
@@ -228,7 +224,6 @@ scissors.addEventListener("click", (event) => {
           results.textContent = `You chose: ${target} > Computer chose: ${computerChoice}`;
           outcome.textContent = "You win! Scissors beats paper.";
           console.log("You win! Scissors beats paper.");
-          playerScore++;
           updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
           updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
           if (playerScore > 5) {
@@ -250,7 +245,6 @@ scissors.addEventListener("click", (event) => {
           results.textContent = `You chose: ${target} < Computer chose: ${computerChoice}`;
           outcome.textContent = "You lose! Rock beats scissors.";
           console.log("You lose! Rock beats scissors.");
-          computerScore++;
           updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
           updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
           if (playerScore > 5) {
