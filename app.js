@@ -210,6 +210,7 @@ rock.addEventListener("click", (event) => {
   const outcome = document.querySelector("#outcome");
   if (computerChoice === "scissors") {
         results.textContent = `You chose: ${target} > Computer chose: ${computerChoice}`;
+        outcome.textContent = "You win! Rock beats scissors.";
         console.log("You win! Rock beats scissors.");
         playerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
@@ -220,15 +221,18 @@ rock.addEventListener("click", (event) => {
             deleteButtons.forEach(button => {
               button.remove();
             });
+            outcome.textContent = "";
           } else if (computerScore > 5) {
             results.textContent = "You lose! The computer wins! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
               button.remove();
             });
+            outcome.textContent = "";
           }
       } else if (computerChoice === "paper") {
         results.textContent = `You chose: ${target} < Computer chose: ${computerChoice}`;
+        outcome.textContent = "You lose! Paper beats rock.";
         console.log("You lose! Paper beats rock.");
         computerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
@@ -239,15 +243,18 @@ rock.addEventListener("click", (event) => {
             deleteButtons.forEach(button => {
               button.remove();
             });
+            outcome.textContent = "";
           } else if (computerScore > 5) {
             results.textContent = "You lose! The computer wins! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
               button.remove();
             });
+            outcome.textContent = "";
           }
       } else {
         results.textContent = `You chose: ${target} = Computer chose: ${computerChoice}`;
+        outcome.textContent = "";
         console.log("It's a tie");
       }
 });
@@ -258,8 +265,10 @@ paper.addEventListener("click", (event) => {
   const computerChoice = getComputerChoice();
   playRound(getHumanChoice(target), getComputerChoice());
   const results = document.querySelector("#results");
+  const outcome = document.querySelector("#outcome");
   if (computerChoice === "rock") {
         results.textContent = `You chose: ${target} > Computer chose: ${computerChoice}`;
+        outcome.textContent = "You win! Paper beats rock.";
         console.log("You win! Paper beats rock.");
         playerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
@@ -270,15 +279,18 @@ paper.addEventListener("click", (event) => {
             deleteButtons.forEach(button => {
               button.remove();
             });
+            outcome.textContent = "";
           } else if (computerScore > 5) {
             results.textContent = "You lose! The computer wins! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
               button.remove();
             });
+            outcome.textContent = "";
           }
         } else if (computerChoice === "scissors") {
         results.textContent = `You chose: ${target} < Computer chose: ${computerChoice}`;
+        outcome.textContent = "You lose! Scissors beats paper.";
         console.log("You lose! Scissors beats paper.");
         computerScore++;
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
@@ -289,15 +301,18 @@ paper.addEventListener("click", (event) => {
             deleteButtons.forEach(button => {
               button.remove();
             });
+            outcome.textContent = "";
           } else if (computerScore > 5) {
             results.textContent = "You lose! The computer wins! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
               button.remove();
             });
+            outcome.textContent = "";
           }
         } else {
         results.textContent = `You chose: ${target} = Computer chose: ${computerChoice}`;
+        outcome.textContent = "";
         console.log("It's a tie");
         }
 });
@@ -308,8 +323,10 @@ scissors.addEventListener("click", (event) => {
   const computerChoice = getComputerChoice();
   playRound(getHumanChoice(target), getComputerChoice());
   const results = document.querySelector("#results");
+  const outcome = document.querySelector("#outcome");
   if (computerChoice === "paper") {
           results.textContent = `You chose: ${target} > Computer chose: ${computerChoice}`;
+          outcome.textContent = "You win! Scissors beats paper.";
           console.log("You win! Scissors beats paper.");
           playerScore++;
           updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
@@ -320,15 +337,18 @@ scissors.addEventListener("click", (event) => {
             deleteButtons.forEach(button => {
               button.remove();
             });
+            outcome.textContent = "";
           } else if (computerScore > 5) {
             results.textContent = "You lose! The computer wins! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
               button.remove();
             });
+            outcome.textContent = "";
           }
         } else if (computerChoice === "rock") {
           results.textContent = `You chose: ${target} < Computer chose: ${computerChoice}`;
+          outcome.textContent = "You lose! Rock beats scissors.";
           console.log("You lose! Rock beats scissors.");
           computerScore++;
           updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
@@ -339,15 +359,18 @@ scissors.addEventListener("click", (event) => {
             deleteButtons.forEach(button => {
               button.remove();
             });
+            outcome.textContent = "";
           } else if (computerScore > 5) {
             results.textContent = "You lose! The computer wins! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
               button.remove();
             });
+            outcome.textContent = "";
           }
         } else {
           results.textContent = `You chose: ${target} = Computer chose: ${computerChoice}`;
+          outcome.textContent = "";
           console.log("It's a tie");
         }
 });
