@@ -15,6 +15,10 @@ function getComputerChoice() {
   }
 }
 
+
+//playRound compares the user's choice to the computer, displays the
+//results to the screen, updates the scores, and ends the game when 
+//either the user or computer gets 5 points. 
 function playRound(humanChoice, computerChoice) {
     const results = document.querySelector("#results");
     const outcome = document.querySelector("#outcome");
@@ -165,6 +169,9 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+//playerScore and computerScore initialize the score.
+//updatedPlayerScore and updatedComputerScore display the scores
+//to the web page.
 let playerScore = 0;
 let computerScore = 0;
 const updatedPlayerScore = document.querySelector("#updated-player-score");
@@ -172,6 +179,10 @@ updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
 const updatedComputerScore = document.querySelector("#updated-computer-score");
 updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
 
+
+//rock stores a reference to the button with the rock id.
+//When the rock button is clicked, it stores the user's choice and 
+//computer's choice and calls the playRound function. 
 const rock = document.querySelector("#rock");
 rock.addEventListener("click", (event) => {
   const target = event.target.id
@@ -179,6 +190,9 @@ rock.addEventListener("click", (event) => {
   playRound(target, computerChoice);
 });
 
+//paper stores a reference to the button with the paper id.
+//When the paper button is clicked, it stores the user's choice and 
+//computer's choice and calls the playRound function. 
 const paper = document.querySelector("#paper");
 paper.addEventListener("click", (event) => {
   const target = event.target.id
@@ -186,6 +200,9 @@ paper.addEventListener("click", (event) => {
   playRound(target, computerChoice);
 });
 
+//scissors stores a reference to the button with the scissors id.
+//When the scissors button is clicked, it stores the user's choice and 
+//computer's choice and calls the playRound function. 
 const scissors = document.querySelector("#scissors");
 scissors.addEventListener("click", (event) => {
   const target = event.target.id
