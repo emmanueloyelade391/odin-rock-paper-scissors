@@ -1,9 +1,4 @@
 //getHumanChoice() receives the player's choice as the user input
-/*
-function getHumanChoice(choice) {
-  const humanChoice = choice;
-  return humanChoice;
-}*/
 
 //getComputerChoice() randomly chooses an option for the computer as a
 //1 out of 3 chance for all options
