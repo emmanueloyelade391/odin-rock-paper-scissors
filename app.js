@@ -1,8 +1,9 @@
 //getHumanChoice() receives the player's choice as the user input
+/*
 function getHumanChoice(choice) {
   const humanChoice = choice;
   return humanChoice;
-}
+}*/
 
 //getComputerChoice() randomly chooses an option for the computer as a
 //1 out of 3 chance for all options
@@ -105,7 +106,7 @@ const rock = document.querySelector("#rock");
 rock.addEventListener("click", (event) => {
   const target = event.target.id
   const computerChoice = getComputerChoice();
-  playRound(getHumanChoice(target), computerChoice);
+  playRound(target, computerChoice);
   const results = document.querySelector("#results");
   const outcome = document.querySelector("#outcome");
   if (computerChoice === "scissors") {
@@ -161,7 +162,7 @@ const paper = document.querySelector("#paper");
 paper.addEventListener("click", (event) => {
   const target = event.target.id
   const computerChoice = getComputerChoice();
-  playRound(getHumanChoice(target), getComputerChoice());
+  playRound(target, getComputerChoice());
   const results = document.querySelector("#results");
   const outcome = document.querySelector("#outcome");
   if (computerChoice === "rock") {
@@ -217,7 +218,7 @@ const scissors = document.querySelector("#scissors");
 scissors.addEventListener("click", (event) => {
   const target = event.target.id
   const computerChoice = getComputerChoice();
-  playRound(getHumanChoice(target), getComputerChoice());
+  playRound(target, getComputerChoice());
   const results = document.querySelector("#results");
   const outcome = document.querySelector("#outcome");
   if (computerChoice === "paper") {
