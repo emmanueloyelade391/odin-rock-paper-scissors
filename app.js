@@ -157,7 +157,7 @@ const paper = document.querySelector("#paper");
 paper.addEventListener("click", (event) => {
   const target = event.target.id
   const computerChoice = getComputerChoice();
-  playRound(target, getComputerChoice());
+  playRound(target, computerChoice);
   const results = document.querySelector("#results");
   const outcome = document.querySelector("#outcome");
   if (computerChoice === "rock") {
@@ -213,7 +213,7 @@ const scissors = document.querySelector("#scissors");
 scissors.addEventListener("click", (event) => {
   const target = event.target.id
   const computerChoice = getComputerChoice();
-  playRound(target, getComputerChoice());
+  playRound(target, computerChoice);
   const results = document.querySelector("#results");
   const outcome = document.querySelector("#outcome");
   if (computerChoice === "paper") {
