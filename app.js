@@ -114,14 +114,14 @@ rock.addEventListener("click", (event) => {
         console.log("You win! Rock beats scissors.");
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
         updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
-        if (playerScore > 5) {
+        if (playerScore === 5) {
             results.textContent = "You win the overall game! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
               button.remove();
             });
             outcome.textContent = "";
-          } else if (computerScore > 5) {
+          } else if (computerScore === 5) {
             results.textContent = "You lose! The computer wins! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
@@ -135,14 +135,14 @@ rock.addEventListener("click", (event) => {
         console.log("You lose! Paper beats rock.");
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
         updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
-        if (playerScore > 5) {
+        if (playerScore === 5) {
             results.textContent = "You win the overall game! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
               button.remove();
             });
             outcome.textContent = "";
-          } else if (computerScore > 5) {
+          } else if (computerScore === 5) {
             results.textContent = "You lose! The computer wins! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
@@ -170,14 +170,14 @@ paper.addEventListener("click", (event) => {
         console.log("You win! Paper beats rock.");
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
         updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
-        if (playerScore > 5) {
+        if (playerScore === 5) {
             results.textContent = "You win the overall game! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
               button.remove();
             });
             outcome.textContent = "";
-          } else if (computerScore > 5) {
+          } else if (computerScore === 5) {
             results.textContent = "You lose! The computer wins! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
@@ -191,14 +191,14 @@ paper.addEventListener("click", (event) => {
         console.log("You lose! Scissors beats paper.");
         updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
         updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
-        if (playerScore > 5) {
+        if (playerScore === 5) {
             results.textContent = "You win the overall game! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
               button.remove();
             });
             outcome.textContent = "";
-          } else if (computerScore > 5) {
+          } else if (computerScore === 5) {
             results.textContent = "You lose! The computer wins! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
@@ -226,14 +226,14 @@ scissors.addEventListener("click", (event) => {
           console.log("You win! Scissors beats paper.");
           updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
           updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
-          if (playerScore > 5) {
+          if (playerScore === 5) {
             results.textContent = "You win the overall game! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
               button.remove();
             });
             outcome.textContent = "";
-          } else if (computerScore > 5) {
+          } else if (computerScore === 5) {
             results.textContent = "You lose! The computer wins! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
@@ -247,14 +247,14 @@ scissors.addEventListener("click", (event) => {
           console.log("You lose! Rock beats scissors.");
           updatedPlayerScore.textContent = `Player Score: ${playerScore}`;
           updatedComputerScore.textContent = `Computer Score: ${computerScore}`;
-          if (playerScore > 5) {
+          if (playerScore === 5) {
             results.textContent = "You win the overall game! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
               button.remove();
             });
             outcome.textContent = "";
-          } else if (computerScore > 5) {
+          } else if (computerScore === 5) {
             results.textContent = "You lose! The computer wins! restart to play again!";
             const deleteButtons = document.querySelectorAll("button");
             deleteButtons.forEach(button => {
